@@ -20,7 +20,7 @@ import { useSelector } from "react-redux";
 
 const MainNavbar = () => {
   // State for both of the popover and chosenLocation components
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
   const [openLogin, setOpenLogin] = useState(false);
   const [openLocation, setOpenLocation] = useState(false);
   const store = useSelector((store) => store.cart);
@@ -41,7 +41,7 @@ const MainNavbar = () => {
     setAnchorEl(null);
   };
   const openPopover = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
+  const id = openPopover ? "simple-popover" : undefined;
   ////////////////////////////////////////////////////////////////
 
   //Chosen Location Functions for changing the state of the setOpenLocation function
@@ -74,9 +74,9 @@ const MainNavbar = () => {
                 <div className={cls.cart_count_button}>
                   <div className={cls.cart}>
                     <CartIcon />
-                   <p className={cls.cart_text}>Cart</p>
+                    <p className={cls.cart_text}>Cart</p>
                   </div>
-                  {store.length == 0 ? null : <span>{store.length}</span>}
+                  {store.length === 0 ? null : <span>{store.length}</span>}
                 </div>
               </Link>
               <div className={cls.language} onClick={handleClick}>
