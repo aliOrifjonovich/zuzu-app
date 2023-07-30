@@ -1,0 +1,108 @@
+.modal_wrapper {
+  height: 326px;
+  max-width: 802px;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+
+  .cancel {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .modal_img {
+    background: #ffffff;
+    // max-width: 250px;
+    min-width: 250px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .modal_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    // width: 100%;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+
+      .header {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #292929;
+      }
+      .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #808080;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+
+      .count {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        max-width: 146px;
+        width: 100%;
+
+        span {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 12px;
+          background: #f5f5f5;
+          border-radius: 100px;
+          cursor: pointer;
+        }
+        p {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 20px;
+          color: #292929;
+          text-align: center;
+          width: 20px;
+        }
+      }
+
+      .buyButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        gap: 35px;
+        background: #ec8d1e;
+        border-radius: 100px;
+        cursor: pointer;
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

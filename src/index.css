@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* scroll-behavior: smooth; */
+}
+body {
+  background: #e5e5e5;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*quyidagi teglarni blok qilib beradi*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*elementlarning hossalarini barcha brauzerlar uchun mo`tadillashtirib beradi*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjusst: 100%;
+  -moz-text-size-adjusst: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*quyidagi teglarning shriftlar oilasini vorislashi taminlanadi*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*turli brauzerlarning o`ziga xos hususiyatlarini olib tashlash*/
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-innesr {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.layout {
+  min-height: calc(100vh - (92px + 182px));
+}
+.navbar {
+  width: 100%;
+  background: #000;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eee;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 12px;
+  gap: 10px;
+  width: 48px !important;
+  height: 48px !important;
+  background: #ffffff;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  right: 1px !important;
+  z-index: 100 !important;
+}
+.swiper-button-prev {
+  position: absolute !important;
+  left: 1px !important;
+  z-index: 100 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #000 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+  opacity: 0.7 !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 51px !important;
+  height: 16px !important;
+  background: #ffffff;
+  border-radius: 56px !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 540px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .swiper-button-next {
+    position: absolute !important;
+    right: 10px !important;
+    z-index: 100 !important;
+  }
+  .swiper-button-prev {
+    position: absolute !important;
+    left: 10px !important;
+    z-index: 100 !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 24px !important;
+    height: 8px !important;
+  }
+}
+
+.MuiPaper-root{
+  max-width: 750px !important;
+  overflow: hidden;
+}
+
+@media (max-width: 396px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 24px !important;
+    height: 8px !important;
+  }
+}

@@ -1,0 +1,74 @@
+.branchinfo {
+  background: #fff;
+  margin-bottom: 59px;
+  max-width: 843px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.header {
+  padding: 16px 24px;
+  border-bottom: 2px solid #eee;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000;
+  }
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 24px;
+
+  .about_text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #292929;
+    }
+  }
+
+  .img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contact_address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #808080;
+
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #292929;
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+
+}

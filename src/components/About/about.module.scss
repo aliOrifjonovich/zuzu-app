@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  width: 843px;
+  margin-bottom: 161px;
+
+  .img{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+    @media(max-width:900px){
+      width: 100%;
+    }
+  }
+
+  .about_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    h1 {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #292929;
+    }
+    p {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #292929;
+    }
+  }
+
+  @media(max-width:900px){
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.wrapper{
+  width: 406px;
+  padding: 16px 25px;
+}
+
+.region_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .region_text {
+    // text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2;
+  }
+  .cancel{
+    cursor: pointer;
+  }
+}
+.eachItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 8px 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+

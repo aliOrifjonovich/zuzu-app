@@ -1,0 +1,125 @@
+.product_item {
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 16px 24px;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+
+  .product_img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    .product_name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #292929;
+    }
+    .about_product {
+      width: 100%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #808080;
+    }
+  }
+  .product_price_buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .product_price {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ec8d1e;
+    }
+
+    .buy {
+      padding: 10px 24px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #292929;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 24px;
+      background: #f5f5f5;
+      border-radius: 100px;
+
+      .buyText2 {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .product_price_buy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buy{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .product_item {
+    // padding: 8px 8px 12px;
+    border: 2px solid #eee;
+
+    .product_name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .about_product {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .product_price_buy {
+      display: block;
+
+      .product_price {
+        display: none;
+      }
+      .buy {
+        width: 100%;
+        padding: 11px 5px;
+        border-radius: 8px;
+        .buyText {
+          display: none;
+          padding: 0;
+        }
+        .buyText2 {
+          display: block;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 575px) {
+// }
+
+// @media (max-width: 395px) {
+// }

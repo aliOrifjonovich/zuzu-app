@@ -1,0 +1,60 @@
+.contact {
+  background: #fff;
+  width: 721px;
+  border-radius: 20px;
+  border: none;
+
+  .header {
+    border: 2px solid #eee;
+    padding: 16px 24px;
+    h1 {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #000;
+    }
+  }
+
+  .text {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .phone_number {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 0;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+    }
+  }
+
+  .info_bot {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    word-break: break-all;
+
+    span{
+        color: #e4bb05;
+    }
+
+  }
+  @media (max-width: 900px){
+    width: 100%;
+  }
+}
+
